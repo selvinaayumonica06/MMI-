@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petualangan Belajar Matematika — Kelas V SD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/design-system.css" />
+</head>
+
+<body>
+  <div id="app-viewport" class="app-viewport">
+    <div id="app-stage" class="app-stage" role="application" aria-label="Petualangan Belajar Matematika">
+      <!-- Lapisan 0: Background Alam Petualangan -->
+      <div class="stage-bg" aria-hidden="true">
+        <img id="master-bg-img" src="assets/images/bg-adventure.jpg" alt="" class="stage-bg-img"
+          onerror="this.style.display='none'" />
+        <div class="stage-bg-fallback"></div>
+        <div class="stage-bg-vignette"></div>
+      </div>
+
+      <!-- Lapisan 1: Konten Layar Aktif -->
+      <main id="screen-root" class="screen-root"></main>
+
+      <!-- Lapisan 2: Kontrol Global Konsisten (Home, Audio, Back, Next) -->
+      <div id="global-chrome" class="global-chrome" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Classic scripts so aplikasi berjalan lancar baik via file:// maupun http:// -->
+  <script defer src="js/data.js"></script>
+  <script defer src="js/state.js"></script>
+  <script defer src="js/audio.js"></script>
+  <script defer src="js/illustrations.js"></script>
+  <script defer src="js/bimo.js"></script>
+  <script defer src="js/pages-intro.js"></script>
+  <script defer src="js/pages-material.js"></script>
+  <script defer src="js/pages-activities.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+
+</html>
